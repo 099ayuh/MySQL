@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>success message</title>
+</head>
+<body>
+    {{#if arr}}
+        {{#each arr}}
+            {{@key}} : {{this}} <br>
+        {{/each}}
+    {{/if}}
+
+    {{#if insert}}
+        <h1>Insertion complete</h1>
+    {{else}}
+        {{#if update}}
+            <h1>Updation complete</h1>
+        {{else}}
+            <h1>Deletion complete</h1>
+        {{/if}}
+    {{/if}}
+
+    
+</body>
+</html>
